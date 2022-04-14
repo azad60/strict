@@ -31,10 +31,13 @@ header{
   margin-left: 40px;
   padding: 7px;
   border: 1px solid #f6f9f9;
+  transition: transform .3s;
 }
 .menu ul li:hover{
   border: 1px solid #ddd;
   border-radius: 3px;
+  transform: scale(1.1);
+  background: #fff;
 }
 .menu ul li a{
   font-size: 16px;
@@ -89,7 +92,14 @@ header{
   background: transparent;
   color: #fff;
   font-size: 18px;
+  transition: transform .4s;
 }
+.banner_content button:hover {
+  transform: scale(1.1);
+  background: rgb(30 112 162 / 29%);
+  transition: all 0.4s ease-out 0s;
+}
+
 .icon a{
   position: absolute;
   font-size: 20px;
@@ -239,6 +249,22 @@ header{
   height: 100%;
   transition: .8s all ease-in-out;
 }
+
+.showcase_gallry_items:nth-child(even):after{
+  content: "";
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2cacf7;
+  opacity: .8;
+}
+.showcase_gallry_items:nth-child(even):hover::after{
+  width: 100%;
+  transition: .8s all ease-in-out;
+}
+
+
 .showcase_gallry_items:hover ul{
   transition: .8s all ease-in-out;
   opacity: 1;
@@ -264,6 +290,10 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform .3s;
+}
+.showcase_gallry_items ul li:hover{
+  transform: scale(1.1);
 }
 .showcase_gallry_items ul li:nth-child(2){
   margin-left: 20px;
@@ -337,10 +367,14 @@ form textarea:focus{
   border: 1px solid #15a4fa;
   padding: 10px 35px;
   border-radius: 3px;
+  transition: transform .3s;
 }
 .form_footer input:hover{
   color: #fff;
   transition: .3s all ease-out;
+  transform: scale(1.1);
+  background: rgb(30 112 162 / 29%);
+  transition: all 0.4s ease-out 0s;
 }
 .check_box input{
   margin-right: 10px;
